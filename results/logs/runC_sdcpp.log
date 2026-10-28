@@ -1,0 +1,67 @@
+$ D:\Downloads\llm_basic\lab07_clay_to_realistic\clay2real-depth-pipeline\vendor\sdcpp-ext\sd-cli.exe -m D:\Downloads\llm_basic\lab07_clay_to_realistic\clay2real-depth-pipeline\models\sd_turbo-q4_0.gguf -p photorealistic render, studio soft lighting, PBR material, preserve original 3d geometry, sharp -n deformed geometry, perspective changed --control-net D:\Downloads\llm_basic\lab07_clay_to_realistic\clay2real-depth-pipeline\models\control_depth_sd21-fp16.gguf --control-image D:\Downloads\llm_basic\lab07_clay_to_realistic\clay2real-depth-pipeline\output\runC_depth.png --control-strength 0.9 -W 512 -H 512 --steps 8 --cfg-scale 1.2 --sampling-method euler_a -s 42 -t -1 -o D:\Downloads\llm_basic\lab07_clay_to_realistic\clay2real-depth-pipeline\output\runC_photoreal.png
+
+load_backend: loaded CPU backend from D:\Downloads\llm_basic\lab07_clay_to_realistic\clay2real-depth-pipeline\vendor\sdcpp-ext\ggml-cpu-alderlake.dll
+[I] loading model from 'D:\Downloads\llm_basic\lab07_clay_to_realistic\clay2real-depth-pipeline\models\sd_turbo-q4_0.gguf' --- diffusion_engine.cpp:685
+[I] load D:\Downloads\llm_basic\lab07_clay_to_realistic\clay2real-depth-pipeline\models\sd_turbo-q4_0.gguf using gguf format --- model_loader.cpp:216
+[I] load D:\Downloads\llm_basic\lab07_clay_to_realistic\clay2real-depth-pipeline\models\control_depth_sd21-fp16.gguf using gguf format --- model_loader.cpp:216
+[I] Version: SD 2.x  --- diffusion_engine.cpp:975
+[W] auto-fit: no GPU devices; using the default backend --- backend_fit.cpp:444
+[I] Weight type stat:                      f32: 544  |     f16: 480  |    q4_0: 545   --- diffusion_engine.cpp:1548
+[I] Conditioner weight type stat:          f32: 123  |     f16: 1    |    q4_0: 170   --- diffusion_engine.cpp:1549
+[I] Diffusion model weight type stat:      f32: 297  |     f16: 66   |    q4_0: 323   --- diffusion_engine.cpp:1550
+[I] VAE weight type stat:                  f32: 124  |     f16: 72   |    q4_0: 52    --- diffusion_engine.cpp:1551
+[I] using VAE for encoding / decoding --- model_builders.cpp:210
+[I] vae decoder: ch = 128 --- auto_encoder_kl.hpp:529
+[I] flash attention auto: CPU -> on (CPU) --- flash_attn.cpp:66
+[I] conv2d direct auto: CPU -> off (no implicit GEMM path) --- conv_direct.cpp:90
+[I] conv3d direct auto: CPU -> off (no implicit GEMM path) --- conv_direct.cpp:90
+[I] total params memory size = 2457.52MB (VRAM 0.00MB, RAM 2457.52MB): text_encoders 356.53MB(RAM), diffusion_model 1246.21MB(RAM), vae 159.68MB(RAM), controlnet 695.10MB(RAM), extensions 0.00MB(N/A) --- diffusion_engine.cpp:1438
+[I] unet build cached graph cut plan done (taking 2 ms) --- ggml_graph_cut.cpp:1034
+
+  |#####################################             | 500/686 -   3.14GB/s[K
+  |##################################################| 686/686 -   2.92GB/s[K
+[I] loading tensors completed, taking 0.42s (read: 0.28s, memcpy: 0.00s, convert: 0.00s, copy_to_backend: 0.00s) --- model_loader.cpp:1405
+[I] running in eps-prediction mode --- diffusion_engine.cpp:1467
+[I] preprocess control[0]: 512x512 crop=(0,0,512,512) resize=512x512 pad=(0,0) output=512x512 filter=auto(0) antialias=false --- image_preprocess.cpp:304
+[I] generate_image 512x512 --- image.cpp:869
+[I] get_sigmas with discrete scheduler --- denoiser.hpp:1129
+[I] sampling using Euler A method --- request.cpp:477
+[I] vae build cached graph cut plan done (taking 0 ms) --- ggml_graph_cut.cpp:1034
+
+  |##################################################| 108/108 - 301.80MB/s[K
+[I] loading tensors completed, taking 0.22s (read: 0.02s, memcpy: 0.00s, convert: 0.00s, copy_to_backend: 0.00s) --- model_loader.cpp:1405
+[I] clip build cached graph cut plan done (taking 3 ms) --- ggml_graph_cut.cpp:1034
+
+  |##################################################| 280/280 -   1.15GB/s[K
+[I] loading tensors completed, taking 0.30s (read: 0.11s, memcpy: 0.00s, convert: 0.00s, copy_to_backend: 0.00s) --- model_loader.cpp:1405
+[I] get_learned_condition completed, taking 0.58s --- image.cpp:580
+[I] generating image: 1/1 - seed 42 --- image.cpp:920
+[I] control_net build cached graph cut plan done (taking 1 ms) --- ggml_graph_cut.cpp:1034
+
+  |##################################################| 340/340 -   2.91GB/s[K
+[I] loading tensors completed, taking 0.23s (read: 0.21s, memcpy: 0.00s, convert: 0.00s, copy_to_backend: 0.00s) --- model_loader.cpp:1405
+[I] control_net build cached graph cut plan done (taking 1 ms) --- ggml_graph_cut.cpp:1034
+[I] unet build cached graph cut plan done (taking 4 ms) --- ggml_graph_cut.cpp:1034
+
+  |======>                                           | 1/8 -   9.78s/it - ETA 01:08[K
+  |============>                                     | 2/8 -   9.98s/it - ETA 00:59[K
+  |==================>                               | 3/8 -  10.58s/it - ETA 00:50[K
+  |=========================>                        | 4/8 -  11.52s/it - ETA 00:41[K
+  |===============================>                  | 5/8 -  13.17s/it - ETA 00:33[K
+  |=====================================>            | 6/8 -  17.63s/it - ETA 00:24[K
+  |===========================================>      | 7/8 -  15.61s/it - ETA 00:12[K
+  |==================================================| 8/8 -   9.41s/it[K
+[I] sampling completed, taking 97.71s --- image.cpp:953
+[I] generating 1 latent images completed, taking 97.71s --- image.cpp:967
+[I] decoding 1 latents --- image.cpp:605
+[I] vae build cached graph cut plan done (taking 0 ms) --- ggml_graph_cut.cpp:1034
+
+  |##################################################| 140/140 - 456.18MB/s[K
+[I] loading tensors completed, taking 0.21s (read: 0.04s, memcpy: 0.00s, convert: 0.00s, copy_to_backend: 0.00s) --- model_loader.cpp:1405
+[I] latent 1 decoded, taking 16.10s --- image.cpp:671
+[I] decode_first_stage completed, taking 16.10s --- image.cpp:675
+[I] generate_image completed in 121.41s --- image.cpp:1140
+[I] save result image 0 to 'D:\Downloads\llm_basic\lab07_clay_to_realistic\clay2real-depth-pipeline\output\runC_photoreal.png' (success) --- main.cpp:495
+[I] 1/1 images saved --- main.cpp:571
+
+[wall clock] 122.25 s

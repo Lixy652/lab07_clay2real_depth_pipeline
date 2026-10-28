@@ -1,0 +1,64 @@
+$ D:\Downloads\llm_basic\lab07_clay_to_realistic\tools\blender-4.5.13-windows-x64\blender.exe -b assets\figure_white_model.blend -P D:\Downloads\llm_basic\lab07_clay_to_realistic\clay2real-depth-pipeline\blender\export_control_maps.py -- --outdir D:\Downloads\llm_basic\lab07_clay_to_realistic\clay2real-depth-pipeline\output --name headfig --res 512 --samples 64
+
+Blender 4.5.13 LTS (hash daeeeca98fb0 built 2026-08-25 01:50:50)
+Read blend: "D:\Downloads\llm_basic\lab07_clay_to_realistic\clay2real-depth-pipeline\assets\figure_white_model.blend"
+Fra:1 Mem:13.97M (Peak 13.97M) | Time:00:00.00 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Floor
+Fra:1 Mem:13.97M (Peak 13.97M) | Time:00:00.00 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Hips
+Fra:1 Mem:13.99M (Peak 13.99M) | Time:00:00.00 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Neck
+Fra:1 Mem:14.00M (Peak 14.00M) | Time:00:00.00 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | LegLowerL
+Fra:1 Mem:14.00M (Peak 14.00M) | Time:00:00.00 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Key
+Fra:1 Mem:14.13M (Peak 14.13M) | Time:00:00.00 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Fill
+Fra:1 Mem:14.91M (Peak 14.91M) | Time:00:00.00 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Initializing
+Fra:1 Mem:13.77M (Peak 14.91M) | Time:00:00.00 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Waiting for render to start
+Fra:1 Mem:13.77M (Peak 14.91M) | Time:00:00.00 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Updating Scene
+Fra:1 Mem:13.77M (Peak 14.91M) | Time:00:00.00 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Updating Shaders
+Fra:1 Mem:13.77M (Peak 14.91M) | Time:00:00.00 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Loading render kernels (may take a few minutes the first time)
+Fra:1 Mem:13.85M (Peak 14.91M) | Time:00:00.00 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Updating Procedurals
+Fra:1 Mem:13.85M (Peak 14.91M) | Time:00:00.00 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Updating Background
+Fra:1 Mem:13.85M (Peak 14.91M) | Time:00:00.00 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Updating Camera
+Fra:1 Mem:13.85M (Peak 14.91M) | Time:00:00.00 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Updating Meshes Flags
+Fra:1 Mem:13.85M (Peak 14.91M) | Time:00:00.00 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Updating Objects
+Fra:1 Mem:13.85M (Peak 14.91M) | Time:00:00.00 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Updating Objects | Copying Transformations to device
+Fra:1 Mem:13.86M (Peak 14.91M) | Time:00:00.00 | Mem:0.01M, Peak:0.01M | Scene, ViewLayer | Updating Particle Systems
+Fra:1 Mem:13.86M (Peak 14.91M) | Time:00:00.00 | Mem:0.01M, Peak:0.01M | Scene, ViewLayer | Updating Particle Systems | Copying Particles to device
+Fra:1 Mem:13.86M (Peak 14.91M) | Time:00:00.00 | Mem:0.01M, Peak:0.01M | Scene, ViewLayer | Updating Meshes
+Fra:1 Mem:13.86M (Peak 14.91M) | Time:00:00.00 | Mem:0.01M, Peak:0.01M | Scene, ViewLayer | Updating Objects | Applying Static Transformations
+Fra:1 Mem:13.86M (Peak 14.91M) | Time:00:00.00 | Mem:0.01M, Peak:0.01M | Scene, ViewLayer | Updating Mesh | Computing attributes
+Fra:1 Mem:13.95M (Peak 14.91M) | Time:00:00.00 | Mem:0.01M, Peak:0.01M | Scene, ViewLayer | Updating Mesh | Copying Attributes to device
+Fra:1 Mem:13.95M (Peak 14.91M) | Time:00:00.00 | Mem:0.10M, Peak:0.10M | Scene, ViewLayer | Updating Scene BVH | Building
+Fra:1 Mem:13.95M (Peak 14.91M) | Time:00:00.00 | Mem:0.10M, Peak:0.10M | Scene, ViewLayer | Updating Scene BVH | Building BVH
+Fra:1 Mem:13.95M (Peak 14.91M) | Time:00:00.00 | Mem:0.56M, Peak:0.56M | Scene, ViewLayer | Updating Scene BVH | Building BVH 0%
+Fra:1 Mem:13.95M (Peak 14.91M) | Time:00:00.00 | Mem:1.12M, Peak:1.59M | Scene, ViewLayer | Updating Scene BVH | Copying BVH to device
+Fra:1 Mem:13.95M (Peak 14.91M) | Time:00:00.00 | Mem:1.12M, Peak:1.59M | Scene, ViewLayer | Updating Mesh | Computing normals
+Fra:1 Mem:14.36M (Peak 14.91M) | Time:00:00.00 | Mem:1.12M, Peak:1.59M | Scene, ViewLayer | Updating Mesh | Copying Mesh to device
+Fra:1 Mem:14.36M (Peak 14.91M) | Time:00:00.00 | Mem:1.53M, Peak:1.59M | Scene, ViewLayer | Updating Objects Flags
+Fra:1 Mem:14.36M (Peak 14.91M) | Time:00:00.00 | Mem:1.53M, Peak:1.59M | Scene, ViewLayer | Updating Primitive Offsets
+Fra:1 Mem:14.36M (Peak 14.91M) | Time:00:00.00 | Mem:1.53M, Peak:1.59M | Scene, ViewLayer | Updating Images
+Fra:1 Mem:14.36M (Peak 14.91M) | Time:00:00.00 | Mem:1.53M, Peak:1.59M | Scene, ViewLayer | Updating Camera Volume
+Fra:1 Mem:14.36M (Peak 14.91M) | Time:00:00.00 | Mem:1.53M, Peak:1.59M | Scene, ViewLayer | Updating Lookup Tables
+Fra:1 Mem:14.36M (Peak 14.91M) | Time:00:00.00 | Mem:1.61M, Peak:1.61M | Scene, ViewLayer | Updating Lights
+Fra:1 Mem:14.36M (Peak 14.91M) | Time:00:00.00 | Mem:1.61M, Peak:1.61M | Scene, ViewLayer | Updating Lights | Computing tree
+Fra:1 Mem:14.36M (Peak 14.91M) | Time:00:00.00 | Mem:1.61M, Peak:1.61M | Scene, ViewLayer | Updating Integrator
+Fra:1 Mem:14.36M (Peak 14.91M) | Time:00:00.00 | Mem:1.61M, Peak:1.61M | Scene, ViewLayer | Updating Film
+Fra:1 Mem:14.36M (Peak 14.91M) | Time:00:00.00 | Mem:1.53M, Peak:1.61M | Scene, ViewLayer | Updating Lookup Tables
+Fra:1 Mem:14.36M (Peak 14.91M) | Time:00:00.00 | Mem:1.62M, Peak:1.62M | Scene, ViewLayer | Updating Baking
+Fra:1 Mem:14.36M (Peak 14.91M) | Time:00:00.00 | Mem:1.62M, Peak:1.62M | Scene, ViewLayer | Updating Device | Writing constant memory
+Fra:1 Mem:14.37M (Peak 14.91M) | Time:00:00.00 | Mem:1.62M, Peak:1.62M | Scene, ViewLayer | Loading denoising kernels (may take a few minutes the first time)
+Fra:1 Mem:14.37M (Peak 14.91M) | Time:00:00.00 | Mem:1.62M, Peak:1.62M | Scene, ViewLayer | Sample 0/64
+Fra:1 Mem:37.65M (Peak 37.65M) | Time:00:00.04 | Remaining:00:01.97 | Mem:24.62M, Peak:24.62M | Scene, ViewLayer | Sample 1/64
+Fra:1 Mem:49.65M (Peak 65.66M) | Time:00:02.36 | Mem:24.62M, Peak:24.62M | Scene, ViewLayer | Sample 64/64
+Fra:1 Mem:49.65M (Peak 65.66M) | Time:00:02.36 | Mem:24.62M, Peak:24.62M | Scene, ViewLayer | Finished
+Fra:1 Mem:25.17M (Peak 65.66M) | Time:00:02.36 | Compositing
+Saved: 'D:\Downloads\llm_basic\lab07_clay_to_realistic\clay2real-depth-pipeline\output\headfig_normal_0001.png'
+Saved: 'D:\Downloads\llm_basic\lab07_clay_to_realistic\clay2real-depth-pipeline\output\headfig_depth_0001.png'
+Saved: 'D:\Downloads\llm_basic\lab07_clay_to_realistic\clay2real-depth-pipeline\output\headfig_clay.png'
+Time: 00:02.41 (Saving: 00:00.01)
+
+[export_control_maps] mist range = [3.464, 4.429] m (near=2% of visible surfaces, far=98% of object vertices, +6% margin)
+[export_control_maps] clay   -> D:\Downloads\llm_basic\lab07_clay_to_realistic\clay2real-depth-pipeline\output\headfig_clay.png
+[export_control_maps] depth  -> D:\Downloads\llm_basic\lab07_clay_to_realistic\clay2real-depth-pipeline\output\headfig_depth_0001.png
+[export_control_maps] normal -> D:\Downloads\llm_basic\lab07_clay_to_realistic\clay2real-depth-pipeline\output\headfig_normal_0001.png
+
+Blender quit
+
+[wall clock] 3.02 s

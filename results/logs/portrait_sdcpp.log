@@ -1,0 +1,52 @@
+$ D:\Downloads\llm_basic\lab07_clay_to_realistic\clay2real-depth-pipeline\vendor\sdcpp-ext\sd-cli.exe -m D:\Downloads\llm_basic\lab07_clay_to_realistic\clay2real-depth-pipeline\models\sd_turbo-q4_0.gguf -p portrait photo of a young man, front view, looking at camera, plain white background, soft studio lighting, sharp focus, natural skin -n deformed face, blurry, extra limbs, watermark, text -W 512 -H 512 --steps 4 --cfg-scale 1.2 --sampling-method euler_a -s 7 -t -1 -o D:\Downloads\llm_basic\lab07_clay_to_realistic\clay2real-depth-pipeline\assets\portrait.png
+
+load_backend: loaded CPU backend from D:\Downloads\llm_basic\lab07_clay_to_realistic\clay2real-depth-pipeline\vendor\sdcpp-ext\ggml-cpu-alderlake.dll
+[I] loading model from 'D:\Downloads\llm_basic\lab07_clay_to_realistic\clay2real-depth-pipeline\models\sd_turbo-q4_0.gguf' --- diffusion_engine.cpp:685
+[I] load D:\Downloads\llm_basic\lab07_clay_to_realistic\clay2real-depth-pipeline\models\sd_turbo-q4_0.gguf using gguf format --- model_loader.cpp:216
+[I] Version: SD 2.x  --- diffusion_engine.cpp:975
+[W] auto-fit: no GPU devices; using the default backend --- backend_fit.cpp:444
+[I] Weight type stat:                      f32: 544  |     f16: 140  |    q4_0: 545   --- diffusion_engine.cpp:1548
+[I] Conditioner weight type stat:          f32: 123  |     f16: 1    |    q4_0: 170   --- diffusion_engine.cpp:1549
+[I] Diffusion model weight type stat:      f32: 297  |     f16: 66   |    q4_0: 323   --- diffusion_engine.cpp:1550
+[I] VAE weight type stat:                  f32: 124  |     f16: 72   |    q4_0: 52    --- diffusion_engine.cpp:1551
+[I] using VAE for encoding / decoding --- model_builders.cpp:210
+[I] vae decoder: ch = 128 --- auto_encoder_kl.hpp:529
+[I] flash attention auto: CPU -> on (CPU) --- flash_attn.cpp:66
+[I] conv2d direct auto: CPU -> off (no implicit GEMM path) --- conv_direct.cpp:90
+[I] conv3d direct auto: CPU -> off (no implicit GEMM path) --- conv_direct.cpp:90
+[I] total params memory size = 1762.42MB (VRAM 0.00MB, RAM 1762.42MB): text_encoders 356.53MB(RAM), diffusion_model 1246.21MB(RAM), vae 159.68MB(RAM), controlnet 0.00MB(N/A), extensions 0.00MB(N/A) --- diffusion_engine.cpp:1438
+[I] unet build cached graph cut plan done (taking 4 ms) --- ggml_graph_cut.cpp:1034
+
+  |###################################               | 468/686 -   2.82GB/s[K
+  |##################################################| 686/686 -   2.99GB/s[K
+[I] loading tensors completed, taking 0.41s (read: 0.32s, memcpy: 0.00s, convert: 0.00s, copy_to_backend: 0.00s) --- model_loader.cpp:1405
+[I] running in eps-prediction mode --- diffusion_engine.cpp:1467
+[I] generate_image 512x512 --- image.cpp:869
+[I] get_sigmas with discrete scheduler --- denoiser.hpp:1129
+[I] sampling using Euler A method --- request.cpp:477
+[I] clip build cached graph cut plan done (taking 2 ms) --- ggml_graph_cut.cpp:1034
+
+  |##################################################| 280/280 -   1.36GB/s[K
+[I] loading tensors completed, taking 0.25s (read: 0.10s, memcpy: 0.00s, convert: 0.00s, copy_to_backend: 0.00s) --- model_loader.cpp:1405
+[I] get_learned_condition completed, taking 0.58s --- image.cpp:580
+[I] generating image: 1/1 - seed 7 --- image.cpp:920
+[I] unet build cached graph cut plan done (taking 4 ms) --- ggml_graph_cut.cpp:1034
+
+  |============>                                     | 1/4 -   9.35s/it - ETA 00:28[K
+  |=========================>                        | 2/4 -  10.47s/it - ETA 00:19[K
+  |=====================================>            | 3/4 -  14.10s/it - ETA 00:11[K
+  |==================================================| 4/4 -  14.99s/it[K
+[I] sampling completed, taking 48.92s --- image.cpp:953
+[I] generating 1 latent images completed, taking 48.92s --- image.cpp:967
+[I] decoding 1 latents --- image.cpp:605
+[I] vae build cached graph cut plan done (taking 0 ms) --- ggml_graph_cut.cpp:1034
+
+  |##################################################| 140/140 - 445.42MB/s[K
+[I] loading tensors completed, taking 0.21s (read: 0.03s, memcpy: 0.00s, convert: 0.00s, copy_to_backend: 0.00s) --- model_loader.cpp:1405
+[I] latent 1 decoded, taking 14.40s --- image.cpp:671
+[I] decode_first_stage completed, taking 14.40s --- image.cpp:675
+[I] generate_image completed in 63.92s --- image.cpp:1140
+[I] save result image 0 to 'D:\Downloads\llm_basic\lab07_clay_to_realistic\clay2real-depth-pipeline\assets\portrait.png' (success) --- main.cpp:495
+[I] 1/1 images saved --- main.cpp:571
+
+[wall clock] 64.75 s

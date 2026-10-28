@@ -1,0 +1,37 @@
+{
+  "name": "headfig",
+  "resolution": 512,
+  "steps": 4,
+  "cfg": 1.2,
+  "control_strength": 0.9,
+  "seed": 42,
+  "threads": -1,
+  "sampler": "euler_a",
+  "prompt": "photorealistic render, studio soft lighting, PBR material, preserve original 3d geometry, sharp",
+  "negative": "deformed geometry, perspective changed",
+  "init_image": null,
+  "strength": 0.75,
+  "model": "sd_turbo-q4_0.gguf",
+  "model_size_mb": 1762.3,
+  "controlnet": "control_depth_sd21-fp16.gguf",
+  "controlnet_size_mb": 694.7,
+  "timing": {
+    "blender_s": 3.02,
+    "depth_prep_s": 0.06,
+    "sdcpp_wall_s": 62.67,
+    "sampling_s": 37.66,
+    "vae_s": 17.55,
+    "total_reported_s": 61.81,
+    "it_per_step_s": 9.05,
+    "total_s": 65.75
+  },
+  "timestamp": "2026-10-27 22:44:59",
+  "mist_range_m": [
+    3.464,
+    4.429
+  ],
+  "control_source": "output\\headfig_depth.png",
+  "sampler_reported": "Euler A",
+  "output": "output\\headfig_photoreal.png",
+  "sha1": "a1ea5ab6cac325ff0582a1010af012502dd15fc2"
+}

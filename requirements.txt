@@ -1,0 +1,7 @@
+# 运行环境依赖（Python 侧）
+# 说明：Blender 与 stable-diffusion.cpp 二进制不在 pip 体系内，见 README「快速开始」。
+numpy>=1.26
+Pillow>=10.0
+opencv-python-headless>=4.9
+matplotlib>=3.7
+pytest>=8.0

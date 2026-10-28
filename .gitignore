@@ -1,0 +1,24 @@
+# 权重与二进制（体积大、有独立许可证，不入库）
+models/
+vendor/
+downloads/
+
+# 运行产物：仅保留 docs/figures 里选出来的报告用图
+output/
+tmp/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+venv/
+
+# 编辑器 / 系统
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Blender 备份文件
+*.blend1
+

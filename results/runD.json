@@ -1,0 +1,37 @@
+{
+  "name": "runD",
+  "resolution": 512,
+  "steps": 4,
+  "cfg": 1.2,
+  "control_strength": 0.5,
+  "seed": 42,
+  "threads": -1,
+  "sampler": "euler_a",
+  "prompt": "photorealistic render, studio soft lighting, PBR material, preserve original 3d geometry, sharp",
+  "negative": "deformed geometry, perspective changed",
+  "init_image": null,
+  "strength": 0.75,
+  "model": "sd_turbo-q4_0.gguf",
+  "model_size_mb": 1762.3,
+  "controlnet": "control_depth_sd21-fp16.gguf",
+  "controlnet_size_mb": 694.7,
+  "timing": {
+    "blender_s": 4.69,
+    "depth_prep_s": 0.06,
+    "sdcpp_wall_s": 82.0,
+    "sampling_s": 57.35,
+    "vae_s": 15.1,
+    "total_reported_s": 81.18,
+    "it_per_step_s": 13.01,
+    "total_s": 86.75
+  },
+  "timestamp": "2026-10-27 22:35:09",
+  "mist_range_m": [
+    5.173,
+    8.899
+  ],
+  "control_source": "output\\runD_depth.png",
+  "sampler_reported": "Euler A",
+  "output": "output\\runD_photoreal.png",
+  "sha1": "5723aa7e5cad84ab53d1de5f23df7b52c7db3779"
+}
